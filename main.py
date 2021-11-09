@@ -1,4 +1,3 @@
-#!/usr/bin/python
 import os
 
 from PIL import Image
@@ -14,6 +13,5 @@ def resize():
             f, e = os.path.splitext(path + item)
             imResize = im.resize((200, 200), Image.ANTIALIAS)
             imResize.save(f + ' resized.jpg', 'JPEG', quality=90)
-
 
 resize()
